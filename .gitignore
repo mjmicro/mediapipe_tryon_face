@@ -5,7 +5,8 @@
 
 # Node artifact files
 node_modules/
-dist/
+#dist/
+.history/
 
 # Compiled Java class files
 *.class
