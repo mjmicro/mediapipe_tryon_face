@@ -9,7 +9,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
-    publicPath: process.env.PUBLIC_PATH || '/'
+    publicPath: process.env.PUBLIC_PATH || '/dist'
   },
   devtool: 'eval-source-map',
   module: {
