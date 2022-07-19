@@ -32,7 +32,7 @@ export class Glasses {
 
   async loadGlasses() {
     this.glasses = await loadModel(
-      `${PUBLIC_PATH}/3d/black-glasses/scene.gltf`
+      `${PUBLIC_PATH}/3d/black-glasses/modelx1.gltf`
     );
     this.glasses.name = "glasses";
 
@@ -95,9 +95,9 @@ export class Glasses {
             scaleLandmark(this.landmarks[454], this.width, this.height).z) **
             2
       );
-
+console.log('eyed',eyeDist)
       // 1.4 is width of 3d model of default glasses
-      let scale = eyeDist / this.size.x;
+      let scale = ((eyeDist) / this.size.x)+1;
       console.log(eyeDist, this.size.x, scale);
       this.glasses.scale.set(scale, scale, scale);
 

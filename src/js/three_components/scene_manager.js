@@ -145,6 +145,7 @@ export class SceneManager {
       this.camera.bottom = -this.videoHeight / 2
       this.camera.left = -this.videoWidth / 2
       this.camera.right = this.videoWidth / 2  
+      
     } else {
       this.camera.position.z = cameraDistance(this.videoHeight, this.fov);
     }

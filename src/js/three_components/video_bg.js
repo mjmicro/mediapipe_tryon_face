@@ -27,6 +27,7 @@ export class VideoBackground {
     const geometry = this.createGeometry();
     const material = this.createMaterial();
     this.plane = new THREE.Mesh(geometry, material);
+  
     // this.updateDimensions();
     this.addPlaneToScene();
   }
@@ -36,6 +37,7 @@ export class VideoBackground {
       // this.updateDimensions();
       this.scene.add(this.plane);
       this.plane.position.set(0, 0, 0);
+      //  this.plane.rotation.set(Math.PI/3, Math.PI, Math.PI);
     }
   }
 
